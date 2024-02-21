@@ -10,7 +10,7 @@ const { checkRoles } = require('../middlewares/auth');
 
 router.get('/byCourier/:carrierName',
     validatorHandler(servicesByCourier,"params"),
-    // checkRoles(["admin","customer"]),
+    checkRoles(["admin","customer"]),
     async (req, res, next ) => {
         try {
             const { carrierName } = req.params

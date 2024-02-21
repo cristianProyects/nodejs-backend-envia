@@ -12,7 +12,7 @@ const mainRouter = (app) => {
   app.use("/api/v1", router); // Define el path
   router.use("/auth", authRoute); // Le menciono que endpoints va usar para (/api/v1)/auth
 
-  // router.use(passport.authenticate('jwt', { session: false }));// Proteger rutas, solo las que  estan debajo de esta linea
+  router.use(passport.authenticate('jwt', { session: false }));// Proteger rutas, solo las que  estan debajo de esta linea
 
   router.use("/users", userService);
   router.use("/couriers", couriers);

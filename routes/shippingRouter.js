@@ -4,12 +4,11 @@ const router = express();
 const shippingService = require('../services/shippingServices');
 const shipping = new shippingService();
 
-// const validatorHandler = require('../middlewares/validation');
-// const { createUserSchema } = require('../schemas/userSchema');
+
 const { checkRoles } = require('../middlewares/auth');
 
 router.post('/generateQuote',
-    // checkRoles(["admin", "customer"]),
+    checkRoles(["admin", "customer"]),
     async (req, res, next ) => {
     try {
         res.send(await shipping.generateQuoteShipment(req.body));
