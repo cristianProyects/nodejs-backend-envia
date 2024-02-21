@@ -2,7 +2,7 @@ const boom = require('@hapi/boom');
 /**
  * 
  * @param {String} schema type of validation ( createProduct, updateProduct,...) from SCHEMA PRODCUT
- * @param {String} property body, paramas or query parameters
+ * @param {String} property body, params or query parameters
  * @returns 
  */
 function validatorHandler(schema, property) {
