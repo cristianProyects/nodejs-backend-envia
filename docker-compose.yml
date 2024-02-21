@@ -1,0 +1,22 @@
+version: '3.3'
+
+services:
+  postgres:
+    image: postgres:latest
+    environment:
+      - POSTGRES_DB=ecommerce
+      - POSTGRES_USER=ecommerce_user
+      - POSTGRES_PASSWORD=ecco&&3463.98[envia.test]prueba
+    ports:
+      - 5432:5432
+    volumes:
+      - ./postgres_data:/var/lib/postgresql/data
+      
+  pgadmin:
+    image: dpage/pgadmin4
+    restart: always
+    environment:
+      PGADMIN_DEFAULT_EMAIL: ecommerce@ecommerce.com
+      PGADMIN_DEFAULT_PASSWORD: ecco&&3463.98[envia.test]prueba.ecommerce
+    ports:
+      - 5050:80
