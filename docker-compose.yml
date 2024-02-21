@@ -6,7 +6,7 @@ services:
     environment:
       - POSTGRES_DB=ecommerce
       - POSTGRES_USER=ecommerce_user
-      - POSTGRES_PASSWORD=ecco&&3463.98[envia.test]prueba
+      - POSTGRES_PASSWORD=p6f0nABhhzYK9sUAV508aaIpwSB
     ports:
       - 5432:5432
     volumes:
@@ -17,6 +17,6 @@ services:
     restart: always
     environment:
       PGADMIN_DEFAULT_EMAIL: ecommerce@ecommerce.com
-      PGADMIN_DEFAULT_PASSWORD: ecco&&3463.98[envia.test]prueba.ecommerce
+      PGADMIN_DEFAULT_PASSWORD: p6f0nABhhzYK9sUAV508aaIpwSB
     ports:
       - 5050:80
