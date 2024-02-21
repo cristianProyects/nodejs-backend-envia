@@ -11,7 +11,9 @@ const config = {
 	// API ENVIA
 	apiUrlEnvia: process.env.URL_API_ENVIA,
 	tokenEnvia: process.env.TOKEN_API_ENVIA,
-	queriesUrlEnvia: process.env.QUERIES_API_ENVIA
+	queriesUrlEnvia: process.env.QUERIES_API_ENVIA,
+	// SOCKET
+	socket: process.env.SOCKET_PORT
 };
 
 module.exports = { config };
